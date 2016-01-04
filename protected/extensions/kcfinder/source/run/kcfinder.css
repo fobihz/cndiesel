@@ -1,0 +1,12 @@
+.image {
+    overflow: hidden;
+    cursor: pointer;
+    background: #dde6f3;
+    border:1px solid #496077;
+    color: #000;
+    font-size:10px;
+    text-align:center;
+    width: 100px;
+}
+.image img{visibility: hidden; }
+.image img.saved{visibility: visible; }

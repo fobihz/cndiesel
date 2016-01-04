@@ -1,0 +1,1 @@
+<input style="width:125px;" type="text" class="timepicker" id="<?=$this->id; ?>" value="<?=$this->name ?>" name="<?=$this->model ?>" />
