@@ -41,7 +41,6 @@ if(!empty($_GET['msg']))
                                    'class' => 'CButtonColumn',
                                    'template' => '{view}&nbsp;&nbsp;{update}',
                                    'updateButtonImageUrl' => '/css/admin/gridview/update.png',
-                                  
                                    //'deleteButtonImageUrl' => '/css/admin/gridview/delete.png',
                                    'viewButtonImageUrl' => '/css/admin/gridview/view.png',
                                    'htmlOptions'=>array('width'=>'90px'),

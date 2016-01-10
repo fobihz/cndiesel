@@ -87,6 +87,9 @@ return array(
                 array('site/index', 'pattern'=>'/specials/', 'defaultParams'=>array('id'=>6)),
                 array('site/index', 'pattern'=>'/delivery/', 'defaultParams'=>array('id'=>7)),
                 array('site/index', 'pattern'=>'/contacts/', 'defaultParams'=>array('id'=>8)),
+                array('site/catalog', 'pattern'=>'/catalog/<alias:(\w|_|-)+>', 'defaultParams'=>array()),
+                array('site/catalog', 'pattern'=>'/catalog/', 'defaultParams'=>array('alias' => 'products')),
+
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
@@ -112,7 +115,21 @@ return array(
                 ),
             ),
         ),
+        'clientScript' => array(
+            'packages' => array(
+                'jquery-1.6' => array(
+                    'baseUrl' => '//ajax.googleapis.com/ajax/libs/jquery/1.6/',
+                    'js' => array('jquery.min.js'),
+                ),
+                'jquery-1.10.1' => array(
+                    'baseUrl' => '/fancybox/lib/',
+                    'js' => array('jquery-1.10.1.min.js'),
+                ),
+            ),
+
+        ),
     ),
+
     'params' => array(
         'adminEmail' => 'cumminsparts@mail.ru',
         'domain' => 'cndiesel.ru',

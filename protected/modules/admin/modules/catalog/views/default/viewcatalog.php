@@ -120,7 +120,9 @@ $catalog_name = Stre::model()->roots()->findByPk($id)->name;
                                     </td>
                                     <td>
                                         <?
-                                        $num_on_page = Yii::app()->request->cookies['cat_num_on_page']->value;
+                                        if(isset(Yii::app()->request->cookies['cat_num_on_page']) ) {
+                                            $num_on_page = Yii::app()->request->cookies['cat_num_on_page']->value;
+                                        }
                                         if(empty($num_on_page)) $num_on_page = 50;
                                         ?>
                                         <?=Chtml::dropDownList('numonpage', $num_on_page, array('10'=>10,'50'=>50,'100'=>100,'200'=>200,'1000000'=>'Все'),array('style'=>'width:200px;'))?>

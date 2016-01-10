@@ -84,7 +84,7 @@ class DefaultController extends Controller
 
            $model = new Stre('search');
            $model->root = $id;
-           $model->type_id = $root->type_id;
+           //$model->type_id = $root->type_id;
 
            if(isset($_GET['Stre']))
               $model->attributes = $_GET['Stre'];
@@ -103,7 +103,7 @@ class DefaultController extends Controller
             $cs->registerScriptFile("/js/admin/url.js");
 
             $model = new Stre();
-            $model->type_id = $_POST['Stre']['type_id'];
+            $model->type_id = isset($_POST['Stre']['type_id']) ? $_POST['Stre']['type_id'] : null;
             $root = Stre::model()->roots()->findByPk($pid);
 
             $this->performAjaxValidation($model);
@@ -204,7 +204,7 @@ class DefaultController extends Controller
 
                 try{
                     $model->saveNode();
-                    if($old_vew!=$new_view)
+                    if($old_view!=$new_view)
                     {
                         foreach($model->descendants()->findAll() as $des )
                         {

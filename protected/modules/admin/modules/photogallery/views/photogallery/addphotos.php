@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs=array(
-        'Каталоги'=>'/admin/catalog/',
-        'О центре'=>'/admin/catalog/default/viewcatalog/id/19',
+//        'Каталоги'=>'/admin/catalog/',
+//        'О центре'=>'/admin/catalog/default/viewcatalog/id/19',
 	'Фотогалереи'=>array('index'),
 	'Фотографии галереи: '.$model->name=>array('photogallery/update','id'=>$model->id),
         ''

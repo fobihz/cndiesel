@@ -153,7 +153,7 @@ class PhotogalleryController extends Controller
 
             }
 
-            $this->render('addphotos',array('model'=>$model,'photo'=>$photo));
+            $this->render('addphotos',array('model'=>$model,/*'photo'=>$photo*/));
         }
 
 	/**

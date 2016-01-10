@@ -107,7 +107,7 @@ class Stre extends CActiveRecord
         public function updateurl()
         {
             if($this->type_id != 16)
-                return Yii::app()->controller->createUrl("update",array("id"=>$this->primaryKey,"pid"=>$_GET["id"],"Stre_page"=>$_GET["Stre_page"]));
+                return Yii::app()->controller->createUrl("update",array("id"=>$this->primaryKey,"pid"=>$_GET["id"],"Stre_page"=>isset($_GET["Stre_page"]) ? $_GET["Stre_page"] : 1 ));
             else
                 return $this->attr_val('Ссылка в админке');
         }
@@ -186,7 +186,9 @@ class Stre extends CActiveRecord
             $criteria->with = array('type');
            // $criteria->params = array(':root'=>$this->root);
 
-            $num_on_page = Yii::app()->request->cookies['cat_num_on_page']->value;
+            if(isset(Yii::app()->request->cookies['cat_num_on_page'])) {
+                $num_on_page = Yii::app()->request->cookies['cat_num_on_page']->value;
+            }
             if(empty($num_on_page)) $num_on_page = 50;
 
             return new CActiveDataProvider(get_class($this), array(

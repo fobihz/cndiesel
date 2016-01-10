@@ -39,18 +39,19 @@
         <ul>
             <li><a href="/admin/page/"><img height="50" src="/images/admin/pages.png" alt="страницы"/><br/>страницы сайта</a>
             </li>
-            <!--<li><a href="/admin/catalog/"><img height="50" src="/images/admin/catalog.png" alt="каталоги"/><br/>каталоги</a>
-</li>
-<li><a href="/admin/camps/camps"><img height="50" src="/images/admin/camp.png" alt="лагеря"/><br/>лагеря</a>
-</li>
+            <li><a href="/admin/catalog/default/viewcatalog/id/50/"><img height="50" src="/images/admin/catalog.png" alt="каталоги"/><br/>продукция</a></li>
+            <li><a href="/admin/photogallery/photogallery/update/id/4/"><img height="50" src="/images/admin/photogallery.png" alt="слайдер" /><br/>слайдер</a></li>
 
-<li><a href="#"><img height="50" src="/images/admin/lists.png" alt="списки страниц" /><br/>списки страниц</a></li>
-<li><a href="/admin/catalog/"><img height="50" src="/images/admin/catalog.png" alt="каталоги" /><br/>каталоги</a></li>
-<li><a href="/admin/photogallery/"><img height="50" src="/images/admin/photogallery.png" alt="каталоги" /><br/>фотогалереи</a></li>
- <li><a href="/admin/faq/"><img height="50" src="/images/admin/faq.png" alt="каталоги" /><br/>вопрос-ответ</a></li>
-<li><a href="/user/"><img height="50" src="/images/admin/siteusers2.png" alt="каталоги" /><br/>пользователи</a></li>
-<li><a href="/admin/email/"><img height="50" src="/images/admin/emails.png" alt="каталоги" /><br/>e-mails</a></li>
--->
+            <!--<li><a href="/admin/camps/camps"><img height="50" src="/images/admin/camp.png" alt="лагеря"/><br/>лагеря</a>
+            </li>
+
+            <li><a href="#"><img height="50" src="/images/admin/lists.png" alt="списки страниц" /><br/>списки страниц</a></li>
+            <li><a href="/admin/catalog/"><img height="50" src="/images/admin/catalog.png" alt="каталоги" /><br/>каталоги</a></li>
+            <li><a href="/admin/photogallery/"><img height="50" src="/images/admin/photogallery.png" alt="каталоги" /><br/>фотогалереи</a></li>
+             <li><a href="/admin/faq/"><img height="50" src="/images/admin/faq.png" alt="каталоги" /><br/>вопрос-ответ</a></li>
+            <li><a href="/user/"><img height="50" src="/images/admin/siteusers2.png" alt="каталоги" /><br/>пользователи</a></li>
+            <li><a href="/admin/email/"><img height="50" src="/images/admin/emails.png" alt="каталоги" /><br/>e-mails</a></li>
+            -->
         </ul>
 
 

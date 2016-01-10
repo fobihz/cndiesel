@@ -1,5 +1,4 @@
  <?
-
         foreach($model->type->attrs as $attr)
         {
             unset($catalog);
@@ -13,6 +12,7 @@
                 $catalog->id_attr =  $attr->id;
 
             }
+           // print_r($catalog->getAttributes()); exit;
             //echo $catalog->id_attr."<br/>";
 
             ?>

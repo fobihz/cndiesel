@@ -64,17 +64,20 @@ if(!empty($_GET['msg']))
 		<td align="right"><b><?php echo $form->label($model,'text'); ?>:</b></td>
 		<td>
                     <?
+                    if( strpos($model->name,'Param') === 0 ) {
+                        echo $form->textField($model,'text');
+                    } else {
 //                    echo $_SERVER['DOCUMENT_ROOT']."/userfiles/editor/";
-                                $this->widget('application.extensions.editor.CKkceditor',array(
-                                    'model'=>$model,
-                                    'attribute'=>'text',
-                                    "height"=>'200px',
-                                    "width"=>'850px',
-                                    "filespath"=>$_SERVER['DOCUMENT_ROOT']."/userfiles/editor/",
-                                    "filesurl"=>"/userfiles/editor/",
+                        $this->widget('application.extensions.editor.CKkceditor', array(
+                            'model' => $model,
+                            'attribute' => 'text',
+                            "height" => '200px',
+                            "width" => '850px',
+                            "filespath" => $_SERVER['DOCUMENT_ROOT'] . "/userfiles/editor/",
+                            "filesurl" => "/userfiles/editor/",
 
-                                ));
-
+                        ));
+                    }
 
                     ?><br/>
 		<?php echo $form->error($model,'text'); ?></td>

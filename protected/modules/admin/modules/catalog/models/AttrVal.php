@@ -46,7 +46,7 @@ class AttrVal extends CActiveRecord
 
         public function __get($name)
         {
-            if($name==($this->id_attr))
+            if($name==($this->getAttribute('id_attr')))
                     return $this->value;
             else
                 return parent::__get($name);
